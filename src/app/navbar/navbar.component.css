@@ -1,0 +1,15 @@
+.dropdown .dropdown-menu .dropdown-item:hover {
+  transition: 0.5s;
+  background-color: #3f51b5;
+  -webkit-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.6);
+  box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.6);
+  color: #ffffff;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+  transition: 0.5s;
+}
+
+.navbar .dropdown-menu a {
+}

@@ -1,0 +1,46 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+
+  <!-- Navbar brand -->
+  <logo><a [routerLink]="['/welcome']" class="navbar-brand" href="#">Acme</a></logo>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a [routerLink]="['/welcome']" class="nav-link waves-light" mdbRippleRadius>Home<span *ngIf="isActiveLink('/welcome')" class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a [routerLink]="['/products']" class="nav-link waves-light" mdbRippleRadius>Product List<span *ngIf="isActiveLink('/products')" class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbRippleRadius>Pricing</a>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown btn-group" dropdown>
+        <a dropdownToggle mdbRippleRadius class="nav-link dropdown-toggle waves-light" mdbRippleRadius>
+          Basic dropdown<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item" mdbRippleRadius href="#">Action</a>
+          <a class="dropdown-item" mdbRippleRadius href="#">Another action</a>
+          <a class="dropdown-item" mdbRippleRadius href="#">Something else here</a>
+          <div class="divider dropdown-divider"></div>
+          <a class="dropdown-item" mdbRippleRadius href="#">Separated link</a>
+        </div>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <!-- Search form -->
+    <form class="form-inline  waves-light" mdbRippleRadius>
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    </form>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->

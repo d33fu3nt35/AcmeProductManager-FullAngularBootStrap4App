@@ -1,0 +1,10 @@
+<div class="card card-primary overallPanel" *ngIf="product">
+  <div class="card-header indigo white-text">
+    {{pageTitle + ': ' + product.productName}}
+  </div>
+  <div class="card-footer">
+    <a class="btn btn-primary" (click)="onBack()" style="width: 137px; text-align: -webkit-match-parent;">
+      <i class="fa fa-angle-double-left" aria-hidden="true"></i> Back
+    </a>
+  </div>
+</div>

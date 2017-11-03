@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+  position: relative;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  padding-bottom: 250px;
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar .btn-group .dropdown-menu a {
+  width: 94%;
+  margin-left: 5px;
+  text-align: right;
+}
+
+.navbar .btn-group .dropdown-menu a:hover {
+  color: #ffffff !important;
+  width: 94%;
+  margin-left: 5px;
+  text-align: right;
+}
+.navbar .btn-group .dropdown-menu a:active {
+  color: #fff !important;
+}
+
+.navbar {
+  border-radius: 0px;
+}
+
+
